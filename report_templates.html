@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+<style>
+table {
+  width:100%; margin-bottom:50px
+}
+table, th, td {
+  border: 0.25px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 8px;
+  text-align: center;
+}
+tr {
+   font-size:10px;
+}
+h2 {
+   font-size: 18px;
+   text-align: center;
+}
+p {
+   font-size: 10px;
+   text-align: left;
+}
+table#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+ background-color: #fff;
+}
+table#t01 th {
+  background-color: white;
+  color: black;
+}
+</style>
+</head>
+<body> 
+<font size="1">
+    <h2>Comparativa D1 y D2</h2>
+    
+     {{ tabla_cero }}
+     
+     {{ primera_tabla }}
+     
+     {{ segunda_tabla }}
+     
+     {{ tercera_tabla }}
+     
+     {{ cuarta_tabla }}
+     
+     {{ quinta_tabla }}
+     
+     {{ sexta_tabla }}
+     
+     {{ septima_tabla }}
+</font>
+  <p>
+    Válidas: Son todas aquellas medidas que tienen un 'Seeing' inferior a 7, el número de 'Muestras' es superior a 190 y 'Return' es igual a 0.
+  </p>
+  <p>
+    No válidas: No cumplen las condiciones mencionadas.
+  </p>
+  <p>
+    Iguales: Consiste en comprobar que la información contenida fila a fila para una misma variable en ambos sistemas es igual.
+    Por ejemplo, al comparar las columnas 'Objeto_D1' y 'Objeto_D2' debe de coincidir el nombre de los objetos fila a fila.
+  </p>
+  <p>
+    No iguales : No cumplen la condición anterior.
+  </p>
+  <p> DS1 : Corresponde a la colección de medidas que cumplen el criterio de válidas y no iguales.</p>
+  <p> DS2 : Corresponde a la colección de medidas que cumplen el crterio de válidas e iguales.</p>
+  <p> DS3 : Corresponde a la colección de medidas que cumplen el criterio de no iguales.</p>
+  <p> DS4 : Corresponde a la colección de medidas que cumplen el cirterio de no válidas.</p>
+  <p> COMP-DS1 : Corresponde a la colección de diferencias de medidas que cumplen el criterio de válidas y no iguales.</p>
+  <p> COMP-DS2 : Corresponde a la colección de diferencias de medidas que cumplen el crterio de válidas e iguales.</p>
+  <p> COMP-DS3 : Corresponde a la colección de diferencias de medidas que cumplen el criterio de no iguales.</p>
+  <p> COMP-DS4 : Corresponde a la colección de diferencias de medidas que cumplen el cirterio de no válidas.</p>
+
+</body>
+</html>
